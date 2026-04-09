@@ -1,10 +1,13 @@
 function entrar() {
     let usuario = document.getElementById("usuario").value;
     let senha = document.getElementById("senha").value;
+    let mensagem = document.getElementById("mensagem");
 
-    if (usuario == "adm" && senha == "123") {
-        document.getElementById("mensagem").innerText = "Login correto";
+    if (usuario == "admin" && senha == "123") {
+        mensagem.innerText = "Login correto";
+        mensagem.style.color = "green";
     } else {
-        document.getElementById("mensagem").innerText = "Usuário ou senha incorretos";
+        mensagem.innerText = "Usuário ou senha incorretos";
+        mensagem.style.color = "red";
     }
 }
