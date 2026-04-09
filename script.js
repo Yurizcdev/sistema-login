@@ -6,6 +6,7 @@ function entrar() {
     if (usuario == "admin" && senha == "123") {
         mensagem.innerText = "Login correto";
         mensagem.style.color = "green";
+        document.getElementById("sistema").style.display = "block";
     } else {
         mensagem.innerText = "Usuário ou senha incorretos";
         mensagem.style.color = "red";
